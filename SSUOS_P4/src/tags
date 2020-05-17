@@ -1,0 +1,604 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AFLAGS	kernel/Makefile	/^AFLAGS = -f elf32$/;"	m
+ASSERT	kernel/arch/interrupt.c	39;"	d	file:
+ASSERT	kernel/lib/bitmap.c	12;"	d	file:
+ASSERT	kernel/lib/list.c	4;"	d	file:
+ASSERT	kernel/lib/synch.c	7;"	d	file:
+AUTHOR	kernel/arch/Main.c	/^const char* AUTHOR = "OSLAB";$/;"	v
+Activate_A20Gate	boot/i386/boot1.asm	/^Activate_A20Gate:$/;"	l
+Address	kernel/arch/interrupt.c	/^	unsigned long Address;$/;"	m	struct:_IDTR	file:
+BITMAP_ERROR	kernel/include/bitmap.h	34;"	d
+BOOL	kernel/include/type.h	/^typedef char BOOL;$/;"	t
+BOOT1_LOAD	boot/i386/bootloader.asm	/^BOOT1_LOAD:$/;"	l
+BUFSIZ	kernel/include/ssulib.h	7;"	d
+BYTE	kernel/include/type.h	/^typedef unsigned char BYTE;$/;"	t
+CARRIAGE_RETURN	boot/i386/boot1.asm	/^CARRIAGE_RETURN:$/;"	l
+CFLAGS	kernel/Makefile	/^CFLAGS = -O0 -g -I.\/include -ffreestanding -m32 -nostdlib -nostdinc -static -fno-stack-protector$/;"	m
+CHAR	kernel/include/console.h	/^} CHAR;$/;"	t	typeref:struct:kChStruct
+CHAR_BIT	kernel/include/limits.h	4;"	d
+CHAR_MAX	kernel/include/limits.h	12;"	d
+CHAR_MAX	kernel/include/limits.h	15;"	d
+CHAR_MIN	kernel/include/limits.h	11;"	d
+CHAR_MIN	kernel/include/limits.h	14;"	d
+CHECK_LINE_STATUS	boot/i386/boot1.asm	/^CHECK_LINE_STATUS:$/;"	l
+CLS	boot/i386/boot1.asm	/^CLS:$/;"	l
+CMDNUM	kernel/arch/proc.c	334;"	d	file:
+CODEDESCRIPTOR	boot/i386/boot1.asm	/^		CODEDESCRIPTOR  equ 0x08$/;"	d
+CODE_SEGMENT	kernel/arch/interrupt.c	17;"	d	file:
+CR0_FLAG_PE	kernel/include/paging.h	8;"	d
+CR0_FLAG_PG	kernel/include/paging.h	7;"	d
+CapslockFlag	kernel/include/kbd.h	/^	BOOL CapslockFlag;	\/\/ Caps Lock 눌림 여부$/;"	m	struct:Key_Status_Struct
+CmdList	kernel/arch/proc.c	/^} CmdList;$/;"	t	typeref:struct:__anon1	file:
+CodeSelector	kernel/arch/interrupt.c	/^	unsigned short CodeSelector;$/;"	m	struct:_ID	file:
+ConvertScancodeToASCII	kernel/arch/kbd.c	/^BOOL ConvertScancodeToASCII(BYTE Scancode, BYTE *Asciicode)$/;"	f
+DATADESCRIPTOR	boot/i386/boot1.asm	/^		DATADESCRIPTOR  equ 0x10$/;"	d
+DIV_ROUND_UP	kernel/include/round.h	10;"	d
+ELEM_BITS	kernel/lib/bitmap.c	26;"	d	file:
+ENTRY	kernel/Makefile	/^ENTRY = ssuos_main$/;"	m
+ENTRY32	boot/i386/boot1.asm	/^ENTRY32:$/;"	l
+ExtentedFlag	kernel/include/kbd.h	/^	BOOL ExtentedFlag;	\/\/ 확장 키코드 존재 여부$/;"	m	struct:Key_Status_Struct
+FALSE	kernel/include/type.h	13;"	d
+FIRST_SPORT	kernel/arch/console.c	17;"	d	file:
+FLAG_IF	kernel/arch/interrupt.c	162;"	d	file:
+FLAG_MBS	kernel/arch/interrupt.c	161;"	d	file:
+GDT	boot/i386/boot1.asm	/^GDT:$/;"	l
+GDT_DESC	boot/i386/boot1.asm	/^GDT_DESC:$/;"	l
+GDT_END	boot/i386/boot1.asm	/^GDT_END:$/;"	l
+Glob_x	kernel/include/console.h	/^int Glob_x;$/;"	v
+Glob_y	kernel/include/console.h	/^int Glob_y;$/;"	v
+HLT	kernel/include/interrupt.h	4;"	d
+HSCREEN	kernel/arch/console.c	9;"	d	file:
+HighOffset	kernel/arch/interrupt.c	/^	unsigned short HighOffset;$/;"	m	struct:_ID	file:
+IDT	boot/i386/boot1.asm	/^IDT  equ    0x40000$/;"	d
+IDTDESCRIPTOR	boot/i386/boot1.asm	/^		IDTDESCRIPTOR	equ 0x20$/;"	d
+IDTR	boot/i386/boot1.asm	/^IDTR:$/;"	l
+IDT_IGNORE	boot/i386/boot1.asm	/^IDT_IGNORE:$/;"	l
+IDT_LOOP	boot/i386/boot1.asm	/^IDT_LOOP:$/;"	l
+INT16_MAX	kernel/include/type.h	34;"	d
+INT16_MIN	kernel/include/type.h	35;"	d
+INT32_MAX	kernel/include/type.h	38;"	d
+INT32_MIN	kernel/include/type.h	39;"	d
+INT64_MAX	kernel/include/type.h	42;"	d
+INT64_MIN	kernel/include/type.h	43;"	d
+INT8_MAX	kernel/include/type.h	30;"	d
+INT8_MIN	kernel/include/type.h	31;"	d
+INTMAX_MAX	kernel/include/type.h	66;"	d
+INTMAX_MIN	kernel/include/type.h	65;"	d
+INTPTR_MAX	kernel/include/type.h	59;"	d
+INTPTR_MIN	kernel/include/type.h	58;"	d
+INTR_MAX	kernel/include/intr-stubs.h	4;"	d
+INTR_OFF	kernel/include/interrupt.h	/^	INTR_OFF,             \/* Interrupts disabled. *\/$/;"	e	enum:intr_level
+INTR_ON	kernel/include/interrupt.h	/^	INTR_ON               \/* Interrupts enabled. *\/$/;"	e	enum:intr_level
+INT_MAX	kernel/include/limits.h	22;"	d
+INT_MIN	kernel/include/limits.h	23;"	d
+IO_BASE	kernel/arch/console.c	16;"	d	file:
+ISR_IGNORE	boot/i386/boot1.asm	/^ISR_IGNORE:$/;"	l
+Initialize_PIC	boot/i386/boot1.asm	/^Initialize_PIC:$/;"	l
+Initialize_Serial_port	boot/i386/boot1.asm	/^Initialize_Serial_port:$/;"	l
+KBDMAPSIZE	kernel/include/kbd.h	7;"	d
+KERNEL_ADDR	kernel/include/paging.h	34;"	d
+KERNEL_HEAP	kernel/include/paging.h	35;"	d
+KERNEL_LOAD	boot/i386/bootloader.asm	/^KERNEL_LOAD:$/;"	l
+KER_SIZ	boot/i386/bootloader.asm	/^KER_SIZ		equ		0x80$/;"	d
+KEY_BSPACE	kernel/include/kbd.h	27;"	d
+KEY_CAPS	kernel/include/kbd.h	14;"	d
+KEY_ESC	kernel/include/kbd.h	9;"	d
+KEY_F1	kernel/include/kbd.h	15;"	d
+KEY_F10	kernel/include/kbd.h	24;"	d
+KEY_F11	kernel/include/kbd.h	25;"	d
+KEY_F12	kernel/include/kbd.h	26;"	d
+KEY_F2	kernel/include/kbd.h	16;"	d
+KEY_F3	kernel/include/kbd.h	17;"	d
+KEY_F4	kernel/include/kbd.h	18;"	d
+KEY_F5	kernel/include/kbd.h	19;"	d
+KEY_F6	kernel/include/kbd.h	20;"	d
+KEY_F7	kernel/include/kbd.h	21;"	d
+KEY_F8	kernel/include/kbd.h	22;"	d
+KEY_F9	kernel/include/kbd.h	23;"	d
+KEY_LALT	kernel/include/kbd.h	12;"	d
+KEY_PRTSCN	kernel/include/kbd.h	11;"	d
+KEY_RSHIFT	kernel/include/kbd.h	10;"	d
+KEY_SPACE	kernel/include/kbd.h	13;"	d
+KEY_TAB	kernel/include/kbd.h	28;"	d
+KStat	kernel/arch/kbd.c	/^static Key_Status KStat;$/;"	v	file:
+Kbd_Map	kernel/arch/kbd.c	/^static BYTE Kbd_Map[4][KBDMAPSIZE] = {$/;"	v	file:
+Key_Status	kernel/include/kbd.h	/^} Key_Status;$/;"	t	typeref:struct:Key_Status_Struct
+Key_Status_Struct	kernel/include/kbd.h	/^typedef struct Key_Status_Struct {$/;"	s
+LEFT	kernel/lib/vsprintk.c	7;"	d	file:
+LINE_FEED	boot/i386/boot1.asm	/^LINE_FEED:$/;"	l
+LINE_STATUS	kernel/arch/console.c	18;"	d	file:
+LIST_INITIALIZER	kernel/include/list.h	121;"	d
+LLONG_MAX	kernel/include/limits.h	30;"	d
+LLONG_MIN	kernel/include/limits.h	31;"	d
+LONG_MAX	kernel/include/limits.h	26;"	d
+LONG_MIN	kernel/include/limits.h	27;"	d
+LowOffset	kernel/arch/interrupt.c	/^	unsigned short LowOffset;$/;"	m	struct:_ID	file:
+MEM_SIZE	kernel/arch/mm.c	/^static unsigned long MEM_SIZE;$/;"	v	file:
+MODIFIER	kernel/arch/Main.c	/^const char* MODIFIER = "You";$/;"	v
+NSCROLL	kernel/arch/console.c	12;"	d	file:
+NULL	kernel/include/type.h	16;"	d
+NULLDESCRIPTOR	boot/i386/boot1.asm	/^		NULLDESCRIPTOR equ 0x00$/;"	d
+NumlockFLag	kernel/include/kbd.h	/^	BOOL NumlockFLag;	\/\/ Num Lock 눌림 여부$/;"	m	struct:Key_Status_Struct
+OUT_TO_SERIAL	boot/i386/boot1.asm	/^OUT_TO_SERIAL:$/;"	l
+PAGE_ADDR_AVAIL	kernel/include/paging.h	21;"	d
+PAGE_ADDR_BASE	kernel/include/paging.h	22;"	d
+PAGE_DIR_SIZE	kernel/include/paging.h	32;"	d
+PAGE_FLAG_ACCESS	kernel/include/paging.h	15;"	d
+PAGE_FLAG_AVAIL	kernel/include/paging.h	16;"	d
+PAGE_FLAG_CACHE	kernel/include/paging.h	14;"	d
+PAGE_FLAG_DIRTY	kernel/include/paging.h	17;"	d
+PAGE_FLAG_GLOB	kernel/include/paging.h	20;"	d
+PAGE_FLAG_PRESENT	kernel/include/paging.h	10;"	d
+PAGE_FLAG_PTA	kernel/include/paging.h	19;"	d
+PAGE_FLAG_RW	kernel/include/paging.h	11;"	d
+PAGE_FLAG_SIZE	kernel/include/paging.h	18;"	d
+PAGE_FLAG_USER	kernel/include/paging.h	12;"	d
+PAGE_FLAG_WRITE	kernel/include/paging.h	13;"	d
+PAGE_MASK_BASE	kernel/include/paging.h	24;"	d
+PAGE_MASK_PDE	kernel/include/paging.h	25;"	d
+PAGE_MASK_PTE	kernel/include/paging.h	26;"	d
+PAGE_OFFSET_PDE	kernel/include/paging.h	27;"	d
+PAGE_OFFSET_PTE	kernel/include/paging.h	28;"	d
+PAGE_SIZE	kernel/include/paging.h	30;"	d
+PAGE_TBL_SIZE	kernel/include/paging.h	31;"	d
+PID0_PAGE_DIR	kernel/arch/paging.c	/^uint32_t *PID0_PAGE_DIR;$/;"	v
+PIT_BCD	kernel/include/pit.h	27;"	d
+PIT_BINARY	kernel/include/pit.h	26;"	d
+PIT_CHANNEL0	kernel/include/pit.h	4;"	d
+PIT_CHANNEL1	kernel/include/pit.h	5;"	d
+PIT_CHANNEL2	kernel/include/pit.h	6;"	d
+PIT_COMMAND	kernel/include/pit.h	7;"	d
+PIT_COUNTER0	kernel/include/pit.h	9;"	d
+PIT_COUNTER1	kernel/include/pit.h	10;"	d
+PIT_COUNTER2	kernel/include/pit.h	11;"	d
+PIT_FRQ_HZ	kernel/include/pit.h	30;"	d
+PIT_HZ	kernel/include/pit.h	29;"	d
+PIT_MODE0	kernel/include/pit.h	19;"	d
+PIT_MODE1	kernel/include/pit.h	20;"	d
+PIT_MODE2	kernel/include/pit.h	21;"	d
+PIT_MODE3	kernel/include/pit.h	22;"	d
+PIT_MODE4	kernel/include/pit.h	23;"	d
+PIT_MODE5	kernel/include/pit.h	24;"	d
+PIT_READBACK	kernel/include/pit.h	12;"	d
+PIT_RW_COUNTER_LATCH	kernel/include/pit.h	14;"	d
+PIT_RW_LBYTE	kernel/include/pit.h	15;"	d
+PIT_RW_LMBYTE	kernel/include/pit.h	17;"	d
+PIT_RW_MBYTE	kernel/include/pit.h	16;"	d
+PLUS	kernel/lib/vsprintk.c	5;"	d	file:
+PRINT	boot/i386/boot1.asm	/^PRINT:$/;"	l
+PRINT_END	boot/i386/boot1.asm	/^PRINT_END:$/;"	l
+PRINT_LOOP	boot/i386/boot1.asm	/^PRINT_LOOP:$/;"	l
+PRINT_NEW_LINE	boot/i386/boot1.asm	/^PRINT_NEW_LINE:$/;"	l
+PRINT_TO_SERIAL	boot/i386/boot1.asm	/^PRINT_TO_SERIAL:$/;"	l
+PROC_BLOCK	kernel/include/proc.h	/^	PROC_BLOCK,$/;"	e	enum:p_state
+PROC_NUM_MAX	kernel/arch/proc.c	15;"	d	file:
+PROC_RUN	kernel/include/proc.h	/^	PROC_RUN,	$/;"	e	enum:p_state
+PROC_STOP	kernel/include/proc.h	/^	PROC_STOP,$/;"	e	enum:p_state
+PROC_UNUSED	kernel/include/proc.h	/^	PROC_UNUSED,$/;"	e	enum:p_state
+PROC_ZOMBIE	kernel/include/proc.h	/^	PROC_ZOMBIE,$/;"	e	enum:p_state
+PROTECTED	boot/i386/boot1.asm	/^PROTECTED:$/;"	l
+PTRDIFF_MAX	kernel/include/type.h	72;"	d
+PTRDIFF_MIN	kernel/include/type.h	71;"	d
+PauseFlag	kernel/include/kbd.h	/^	int PauseFlag;	\/\/ Pause 눌림 여부$/;"	m	struct:Key_Status_Struct
+PrintChar	kernel/arch/console.c	/^void PrintChar(int x, int y, const char String) $/;"	f
+PrintCharToScreen	kernel/arch/console.c	/^void PrintCharToScreen(int x, int y, const char *pString) $/;"	f
+READY_TO_PRINT	boot/i386/boot1.asm	/^READY_TO_PRINT:$/;"	l
+REAL	kernel/arch/intr-stubs.S	/^#define REAL                                    \\$/;"	d
+REFRESH_FPS	kernel/arch/interrupt.c	16;"	d	file:
+REGSYS	kernel/arch/syscall.c	73;"	d	file:
+ROUND_DOWN	kernel/include/round.h	14;"	d
+ROUND_UP	kernel/include/round.h	6;"	d
+SCHAR_MAX	kernel/include/limits.h	6;"	d
+SCHAR_MIN	kernel/include/limits.h	7;"	d
+SCROLL_END	kernel/arch/console.c	26;"	d	file:
+SERIAL_STDOUT	kernel/include/console.h	18;"	d
+SETUP_GDT	boot/i386/boot1.asm	/^SETUP_GDT:$/;"	l
+SHRT_MAX	kernel/include/limits.h	18;"	d
+SHRT_MIN	kernel/include/limits.h	19;"	d
+SIGN	kernel/lib/vsprintk.c	4;"	d	file:
+SIZE_MAX	kernel/include/type.h	74;"	d
+SIZE_SCREEN	kernel/arch/console.c	11;"	d	file:
+SIZE_SCROLL	kernel/arch/console.c	13;"	d	file:
+SLEEP_FREQ	kernel/arch/proc.c	315;"	d	file:
+SMALL	kernel/lib/vsprintk.c	9;"	d	file:
+SPACE	kernel/lib/vsprintk.c	6;"	d	file:
+SPECIAL	kernel/lib/vsprintk.c	8;"	d	file:
+STACK_SIZE	kernel/arch/proc.c	14;"	d	file:
+START	boot/i386/bootloader.asm	/^START:   $/;"	l
+STUB	kernel/arch/intr-stubs.S	/^#define STUB(NUMBER, TYPE)                      \\$/;"	d
+SYSCALL_ARG_MAX	kernel/arch/interrupt.c	263;"	d	file:
+SYS_EXIT	kernel/include/syscall.h	/^	SYS_EXIT,$/;"	e	enum:SYS_LIST
+SYS_FORK	kernel/include/syscall.h	/^	SYS_FORK = 0,$/;"	e	enum:SYS_LIST
+SYS_LIST	kernel/include/syscall.h	/^enum SYS_LIST {$/;"	g
+SYS_NUM	kernel/include/syscall.h	/^	SYS_NUM,$/;"	e	enum:SYS_LIST
+SYS_SHUTDOWN	kernel/include/syscall.h	/^	SYS_SHUTDOWN,$/;"	e	enum:SYS_LIST
+SYS_SSUREAD	kernel/include/syscall.h	/^	SYS_SSUREAD,$/;"	e	enum:SYS_LIST
+SYS_WAIT	kernel/include/syscall.h	/^	SYS_WAIT,$/;"	e	enum:SYS_LIST
+ScrolllockFlag	kernel/include/kbd.h	/^	BOOL ScrolllockFlag;	\/\/ Scroll Lock 눌림 여부$/;"	m	struct:Key_Status_Struct
+ShiftFlag	kernel/include/kbd.h	/^	BOOL ShiftFlag; 	\/\/ Shift 눌림 여부$/;"	m	struct:Key_Status_Struct
+Size	kernel/arch/interrupt.c	/^	unsigned short Size;$/;"	m	struct:_IDTR	file:
+THR_EMPTY	kernel/arch/console.c	19;"	d	file:
+TIMER_MAX	kernel/arch/interrupt.c	15;"	d	file:
+TRUE	kernel/include/type.h	12;"	d
+Type	kernel/arch/interrupt.c	/^	unsigned short Type;$/;"	m	struct:_ID	file:
+UCHAR_MAX	kernel/include/limits.h	8;"	d
+UINT16_MAX	kernel/include/type.h	49;"	d
+UINT32_MAX	kernel/include/type.h	52;"	d
+UINT64_MAX	kernel/include/type.h	55;"	d
+UINT8_MAX	kernel/include/type.h	46;"	d
+UINTMAX_MAX	kernel/include/type.h	69;"	d
+UINTPTR_MAX	kernel/include/type.h	62;"	d
+UINT_MAX	kernel/include/limits.h	24;"	d
+ULLONG_MAX	kernel/include/limits.h	32;"	d
+ULONG_MAX	kernel/include/limits.h	28;"	d
+USHRT_MAX	kernel/include/limits.h	20;"	d
+UpdateKeyStat	kernel/arch/kbd.c	/^void UpdateKeyStat(BYTE Scancode)$/;"	f
+VERSION	kernel/arch/Main.c	/^const char* VERSION = "0.1.02";$/;"	v
+VIDEODESCRIPTOR	boot/i386/boot1.asm	/^		VIDEODESCRIPTOR equ 0x18$/;"	d
+VIDIO_MEMORY	kernel/arch/console.c	14;"	d	file:
+VSCREEN	kernel/arch/console.c	10;"	d	file:
+ZEROPAD	kernel/lib/vsprintk.c	3;"	d	file:
+_ADDRESSOF	kernel/include/stdarg.h	6;"	d
+_ID	kernel/arch/interrupt.c	/^typedef struct _ID$/;"	s	file:
+_ID	kernel/arch/interrupt.c	/^} _ID;$/;"	t	typeref:struct:_ID	file:
+_IDTR	kernel/arch/interrupt.c	/^typedef struct _IDTR$/;"	s	file:
+_IDTR	kernel/arch/interrupt.c	/^} _IDTR;$/;"	t	typeref:struct:_IDTR	file:
+_INTR_STUBS_H_	kernel/include/intr-stubs.h	2;"	d
+_INTSIZEOF	kernel/include/stdarg.h	7;"	d
+_SWITCH_H_	kernel/include/switch.h	2;"	d
+__BITMAP_H__	kernel/include/bitmap.h	2;"	d
+__CONSOLE_H__	kernel/include/console.h	2;"	d
+__DEVICE_H__	kernel/include/device.h	2;"	d
+__DO_SYSCALL_H__	kernel/include/do_syscall.h	2;"	d
+__INTERRUPT_H__	kernel/include/interrupt.h	2;"	d
+__IO_H__	kernel/include/io.h	2;"	d
+__KDB_H__	kernel/include/kbd.h	2;"	d
+__LIB_ROUND_H	kernel/include/round.h	2;"	d
+__LIMITS_H__	kernel/include/limits.h	2;"	d
+__LIST_H__	kernel/include/list.h	2;"	d
+__MALLOC_H__	kernel/include/malloc.h	2;"	d
+__MEM_H__	kernel/include/mm.h	2;"	d
+__PAGING_H__	kernel/include/paging.h	2;"	d
+__PALLOC_H__	kernel/include/palloc.h	2;"	d
+__PIT_H__	kernel/include/pit.h	2;"	d
+__PROC_H__	kernel/include/proc.h	2;"	d
+__SCHED_H__	kernel/include/sched.h	2;"	d
+__SSULIB_H__	kernel/include/ssulib.h	2;"	d
+__STDARG_H__	kernel/include/stdarg.h	2;"	d
+__SYNCH_H__	kernel/include/synch.h	2;"	d
+__SYSCALL_H__	kernel/include/syscall.h	2;"	d
+__TYPE_H__	kernel/include/type.h	2;"	d
+a_s	kernel/arch/console.c	/^bool a_s = TRUE;$/;"	v
+arch	kernel/Makefile	/^arch = .\/arch$/;"	m
+bAtt	kernel/include/console.h	/^		unsigned char bAtt;$/;"	m	struct:kChStruct
+bCh	kernel/include/console.h	/^		unsigned char bCh;$/;"	m	struct:kChStruct
+barrier	kernel/include/synch.h	50;"	d
+base	kernel/arch/palloc.c	/^	uint32_t *base;                      \/* Base of pool. *\/$/;"	m	struct:pool	file:
+bit_cnt	kernel/lib/bitmap.c	/^	size_t bit_cnt;     \/* Number of bits. *\/$/;"	m	struct:bitmap	file:
+bit_mask	kernel/lib/bitmap.c	/^bit_mask (size_t bit_idx) $/;"	f	file:
+bitmap	kernel/lib/bitmap.c	/^struct bitmap$/;"	s	file:
+bitmap_all	kernel/lib/bitmap.c	/^bitmap_all (const struct bitmap *b, size_t start, size_t cnt) $/;"	f
+bitmap_any	kernel/lib/bitmap.c	/^bitmap_any (const struct bitmap *b, size_t start, size_t cnt) $/;"	f
+bitmap_buf_size	kernel/lib/bitmap.c	/^bitmap_buf_size (size_t bit_cnt) $/;"	f
+bitmap_contains	kernel/lib/bitmap.c	/^bitmap_contains (const struct bitmap *b, size_t start, size_t cnt, bool value) $/;"	f
+bitmap_count	kernel/lib/bitmap.c	/^bitmap_count (const struct bitmap *b, size_t start, size_t cnt, bool value) $/;"	f
+bitmap_create_in_buf	kernel/lib/bitmap.c	/^bitmap_create_in_buf (size_t bit_cnt, void *block, size_t block_size)\/\/ UNUSED)$/;"	f
+bitmap_file_size	kernel/lib/bitmap.c	/^bitmap_file_size (const struct bitmap *b) $/;"	f
+bitmap_flip	kernel/lib/bitmap.c	/^bitmap_flip (struct bitmap *b, size_t bit_idx) $/;"	f
+bitmap_mark	kernel/lib/bitmap.c	/^bitmap_mark (struct bitmap *b, size_t bit_idx) $/;"	f
+bitmap_none	kernel/lib/bitmap.c	/^bitmap_none (const struct bitmap *b, size_t start, size_t cnt) $/;"	f
+bitmap_read	kernel/lib/bitmap.c	/^bitmap_read (struct bitmap *b, struct file *file) $/;"	f
+bitmap_reset	kernel/lib/bitmap.c	/^bitmap_reset (struct bitmap *b, size_t bit_idx) $/;"	f
+bitmap_scan	kernel/lib/bitmap.c	/^bitmap_scan (const struct bitmap *b, size_t start, size_t cnt, bool value) $/;"	f
+bitmap_scan_and_flip	kernel/lib/bitmap.c	/^bitmap_scan_and_flip (struct bitmap *b, size_t start, size_t cnt, bool value)$/;"	f
+bitmap_set	kernel/lib/bitmap.c	/^bitmap_set (struct bitmap *b, size_t idx, bool value) $/;"	f
+bitmap_set_all	kernel/lib/bitmap.c	/^bitmap_set_all (struct bitmap *b, bool value) $/;"	f
+bitmap_set_multiple	kernel/lib/bitmap.c	/^bitmap_set_multiple (struct bitmap *b, size_t start, size_t cnt, bool value) $/;"	f
+bitmap_size	kernel/lib/bitmap.c	/^bitmap_size (const struct bitmap *b)$/;"	f
+bitmap_test	kernel/lib/bitmap.c	/^bitmap_test (const struct bitmap *b, size_t idx) $/;"	f
+bitmap_write	kernel/lib/bitmap.c	/^bitmap_write (const struct bitmap *b, struct file *file)$/;"	f
+bits	kernel/lib/bitmap.c	/^	elem_type *bits;    \/* Elements that represent bits. *\/$/;"	m	struct:bitmap	file:
+bool	kernel/include/type.h	/^typedef char bool;$/;"	t
+buf_e	kernel/arch/console.c	25;"	d	file:
+buf_head	kernel/arch/kbd.c	/^int buf_head, buf_tail;$/;"	v
+buf_p	kernel/arch/console.c	/^char *buf_p;	\/\/ = buf_s;$/;"	v
+buf_s	kernel/arch/console.c	/^char buf_s[SIZE_SCROLL];$/;"	v
+buf_tail	kernel/arch/kbd.c	/^int buf_head, buf_tail;$/;"	v
+buf_w	kernel/arch/console.c	/^char *buf_w;	\/\/ = buf_s;$/;"	v
+byte_cnt	kernel/lib/bitmap.c	/^byte_cnt (size_t bit_cnt)$/;"	f	file:
+child_pid	kernel/include/proc.h	/^	int child_pid;						\/\/ 종료된 자식$/;"	m	struct:process
+clrScreen	kernel/arch/console.c	/^void clrScreen(void) $/;"	f
+cmd	kernel/arch/proc.c	/^	char* cmd;$/;"	m	struct:__anon1	file:
+condition	kernel/include/synch.h	/^struct condition $/;"	s
+cs	kernel/include/interrupt.h	/^	uint16_t cs, :16;           \/* Code segment for eip. *\/$/;"	m	struct:intr_frame
+cur_process	kernel/arch/proc.c	/^struct process *cur_process;$/;"	v	typeref:struct:process
+d_list	kernel/arch/proc.c	/^struct list d_list;		\/\/ Deleted Process List$/;"	v	typeref:struct:list
+default_handler	kernel/arch/interrupt.c	/^void default_handler(struct intr_frame *iframe)$/;"	f
+detect_mem	kernel/arch/mm.c	/^void detect_mem()$/;"	f
+dev_shutdown	kernel/arch/device.c	/^void dev_shutdown(void)$/;"	f
+do_div	kernel/lib/vsprintk.c	13;"	d	file:
+do_exit	kernel/arch/do_syscall.c	/^void do_exit(int status)$/;"	f
+do_fork	kernel/arch/do_syscall.c	/^pid_t do_fork(proc_func func, void* aux)$/;"	f
+do_sched_on_return	kernel/arch/interrupt.c	/^void do_sched_on_return(void)$/;"	f
+do_shutdown	kernel/arch/do_syscall.c	/^void do_shutdown(void)$/;"	f
+do_ssuread	kernel/arch/do_syscall.c	/^int do_ssuread(void)$/;"	f
+do_wait	kernel/arch/do_syscall.c	/^pid_t do_wait(int *status)$/;"	f
+ds	kernel/include/interrupt.h	/^	uint16_t ds, :16;           \/* Saved DS segment register. *\/$/;"	m	struct:intr_frame
+dw	boot/i386/bootloader.asm	/^dw	0xaa55$/;"	l
+eax	kernel/include/interrupt.h	/^	uint32_t eax;               \/* Saved EAX. *\/$/;"	m	struct:intr_frame
+ebp	kernel/include/interrupt.h	/^	uint32_t ebp;               \/* Saved EBP. *\/$/;"	m	struct:intr_frame
+ebx	kernel/include/interrupt.h	/^	uint32_t ebx;               \/* Saved EBX. *\/$/;"	m	struct:intr_frame
+ecx	kernel/include/interrupt.h	/^	uint32_t ecx;               \/* Saved ECX. *\/$/;"	m	struct:intr_frame
+edi	kernel/include/interrupt.h	/^	uint32_t edi;               \/* Saved EDI. *\/$/;"	m	struct:intr_frame
+edx	kernel/include/interrupt.h	/^	uint32_t edx;               \/* Saved EDX. *\/$/;"	m	struct:intr_frame
+eflags	kernel/include/interrupt.h	/^	uint32_t eflags;            \/* Saved CPU flags. *\/$/;"	m	struct:intr_frame
+eip	kernel/include/interrupt.h	/^	void (*eip) (void);         \/* Next instruction to execute. *\/$/;"	m	struct:intr_frame
+elem_all	kernel/include/proc.h	/^	struct list_elem elem_all;		\/\/프로세스 전체 리스트 노드$/;"	m	struct:process	typeref:struct:process::list_elem
+elem_cnt	kernel/lib/bitmap.c	/^elem_cnt (size_t bit_cnt)$/;"	f	file:
+elem_idx	kernel/lib/bitmap.c	/^elem_idx (size_t bit_idx) $/;"	f	file:
+elem_stat	kernel/include/proc.h	/^	struct list_elem elem_stat;		\/\/프로세스 상태 별 리스트 노드$/;"	m	struct:process	typeref:struct:process::list_elem
+elem_type	kernel/lib/bitmap.c	/^typedef unsigned long elem_type;$/;"	t	file:
+error_code	kernel/include/interrupt.h	/^	uint32_t error_code;        \/* Error code. *\/$/;"	m	struct:intr_frame
+es	kernel/include/interrupt.h	/^	uint16_t es, :16;           \/* Saved ES segment register. *\/$/;"	m	struct:intr_frame
+esi	kernel/include/interrupt.h	/^	uint32_t esi;               \/* Saved ESI. *\/$/;"	m	struct:intr_frame
+esp	kernel/include/interrupt.h	/^	void *esp;                  \/* Saved stack pointer. *\/$/;"	m	struct:intr_frame
+esp_dummy	kernel/include/interrupt.h	/^	uint32_t esp_dummy;         \/* Not used. *\/$/;"	m	struct:intr_frame
+exit	kernel/arch/syscall.c	/^void exit(int status)$/;"	f
+exit_status	kernel/include/proc.h	/^	int exit_status;					\/\/ 종료 상태$/;"	m	struct:process
+f	Makefile	/^	dd if=disk.bin of=disk.img bs=10240000 seek=0 count=1 conv=notrunc$/;"	m
+false	kernel/include/type.h	22;"	d
+find_end_of_run	kernel/lib/list.c	/^find_end_of_run (struct list_elem *a, struct list_elem *b,$/;"	f	file:
+fork	kernel/arch/syscall.c	/^pid_t fork(proc_func func, void* aux)$/;"	f
+frame_pointer	kernel/include/interrupt.h	/^	void *frame_pointer;        \/* Saved EBP (frame pointer). *\/$/;"	m	struct:intr_frame
+fs	kernel/include/interrupt.h	/^	uint16_t fs, :16;           \/* Saved FS segment register. *\/$/;"	m	struct:intr_frame
+func	kernel/arch/proc.c	/^	void* func;$/;"	m	struct:__anon1	file:
+getEIP	kernel/arch/proc.c	/^void* getEIP()$/;"	f
+getMemSize	kernel/arch/mem.asm	/^getMemSize:		$/;"	l
+getToken	kernel/lib/ssulib.c	/^int getToken(char* buf, int len)$/;"	f
+getValidPid	kernel/arch/proc.c	/^pid_t getValidPid(int *idx) {$/;"	f
+get_cur_pd	kernel/arch/paging.c	/^uint32_t* get_cur_pd()$/;"	f
+get_next_proc	kernel/arch/sched.c	/^struct process* get_next_proc(void) {$/;"	f
+get_ticks	kernel/arch/interrupt.c	/^unsigned long get_ticks(void)$/;"	f
+getchar	kernel/lib/ssulib.c	/^char getchar()$/;"	f
+gs	kernel/include/interrupt.h	/^	uint16_t gs, :16;           \/* Saved GS segment register. *\/$/;"	m	struct:intr_frame
+handlers	kernel/arch/interrupt.c	/^intr_handler_func *handlers[INTR_MAX];	\/\/실제 인터럽트 핸들러 들$/;"	v
+head	kernel/include/list.h	/^    struct list_elem head;      \/* List head. *\/$/;"	m	struct:list	typeref:struct:list::list_elem
+hexDump	kernel/arch/proc.c	/^void hexDump (void *addr, int len) {$/;"	f
+holder	kernel/include/synch.h	/^      struct process *holder;      \/* Process holding lock (for debugging). *\/$/;"	m	struct:lock	typeref:struct:lock::process
+idle	kernel/arch/proc.c	/^void idle(void* aux)$/;"	f
+idle	kernel/include/proc.h	/^proc_func idle;						\/\/idle 함수$/;"	v
+idt	kernel/arch/interrupt.c	/^_ID     *idt;$/;"	v
+in_external_intr	kernel/arch/interrupt.c	/^static bool in_external_intr;   \/* Are we processing an external interrupt? *\/$/;"	v	file:
+inb	kernel/arch/io.asm	/^inb:$/;"	l
+init_console	kernel/arch/console.c	/^void init_console(void)$/;"	f
+init_intr	kernel/arch/interrupt.c	/^int init_intr(void)$/;"	f
+init_kbd	kernel/arch/kbd.c	/^void init_kbd(void)$/;"	f
+init_paging	kernel/arch/paging.c	/^void init_paging()$/;"	f
+init_palloc	kernel/arch/palloc.c	/^init_palloc (void) $/;"	f
+init_pit	kernel/arch/pit.c	/^void init_pit(void)  $/;"	f
+init_pool	kernel/arch/palloc.c	/^init_pool (struct pool *p, void *base, size_t page_cnt, const char *name) $/;"	f	file:
+init_proc	kernel/arch/proc.c	/^void init_proc()$/;"	f
+init_syscall	kernel/arch/syscall.c	/^void init_syscall(void)$/;"	f
+inl	kernel/arch/io.asm	/^inl:$/;"	l
+inplace_merge	kernel/lib/list.c	/^inplace_merge (struct list_elem *a0, struct list_elem *a1b0,$/;"	f	file:
+int16_t	kernel/include/type.h	/^typedef signed short int int16_t;$/;"	t
+int32_t	kernel/include/type.h	/^typedef signed int int32_t;$/;"	t
+int64_t	kernel/include/type.h	/^typedef signed long long int int64_t;$/;"	t
+int8_t	kernel/include/type.h	/^typedef signed char int8_t;$/;"	t
+intmax_t	kernel/include/type.h	/^typedef int64_t intmax_t;$/;"	t
+intptr_t	kernel/include/type.h	/^typedef int32_t intptr_t;$/;"	t
+intr_common	kernel/arch/interrupt.c	/^void intr_common(struct intr_frame *iframe)$/;"	f
+intr_context	kernel/arch/interrupt.c	/^bool intr_context (void)$/;"	f
+intr_disable	kernel/arch/interrupt.c	/^enum intr_level intr_disable (void) $/;"	f
+intr_enable	kernel/arch/interrupt.c	/^enum intr_level intr_enable (void) $/;"	f
+intr_entry	kernel/arch/intr-stubs.S	/^intr_entry:$/;"	l
+intr_exit	kernel/arch/intr-stubs.S	/^intr_exit:$/;"	l
+intr_frame	kernel/include/interrupt.h	/^struct intr_frame$/;"	s
+intr_get_level	kernel/arch/interrupt.c	/^enum intr_level intr_get_level (void) $/;"	f
+intr_handler_func	kernel/include/interrupt.h	/^typedef void intr_handler_func (struct intr_frame *);$/;"	t
+intr_level	kernel/include/interrupt.h	/^enum intr_level$/;"	g
+intr_set_level	kernel/arch/interrupt.c	/^enum intr_level intr_set_level (enum intr_level level) $/;"	f
+intr_stub_func	kernel/include/intr-stubs.h	/^typedef void intr_stub_func (void);$/;"	t
+intr_stubs	kernel/arch/intr-stubs.S	/^intr_stubs:$/;"	l
+iowait	kernel/arch/io.asm	/^iowait:$/;"	l
+isEmpty	kernel/arch/kbd.c	/^bool isEmpty()$/;"	f
+isFull	kernel/arch/kbd.c	/^bool isFull()$/;"	f
+is_digit	kernel/lib/vsprintk.c	11;"	d	file:
+is_head	kernel/lib/list.c	/^is_head (struct list_elem *elem)$/;"	f	file:
+is_interior	kernel/lib/list.c	/^is_interior (struct list_elem *elem)$/;"	f	file:
+is_sorted	kernel/lib/list.c	/^is_sorted (struct list_elem *a, struct list_elem *b,$/;"	f	file:
+is_tail	kernel/lib/list.c	/^is_tail (struct list_elem *elem)$/;"	f	file:
+jmp	boot/i386/bootloader.asm	/^jmp		0x0900:0x0000$/;"	l
+kChStruct	kernel/include/console.h	/^typedef struct kChStruct$/;"	s
+kbd_buf	kernel/arch/kbd.c	/^static char kbd_buf[BUFSIZ];$/;"	v	file:
+kbd_handler	kernel/arch/kbd.c	/^void kbd_handler(struct intr_frame *iframe)$/;"	f
+kbd_read_char	kernel/arch/kbd.c	/^char kbd_read_char()$/;"	f
+kernel1_proc	kernel/arch/proc.c	/^void kernel1_proc(void* aux)$/;"	f
+kernel2_proc	kernel/arch/proc.c	/^void kernel2_proc(void* aux)$/;"	f
+last_mask	kernel/lib/bitmap.c	/^last_mask (const struct bitmap *b) $/;"	f	file:
+lately_pid	kernel/arch/proc.c	/^static int lately_pid;		\/\/init vaule = -1$/;"	v	file:
+less_time_sleep	kernel/arch/proc.c	/^bool less_time_sleep(const struct list_elem *a, const struct list_elem *b,void *aux)$/;"	f
+lib	kernel/Makefile	/^lib = .\/lib$/;"	m
+list	kernel/include/list.h	/^struct list $/;"	s
+list_back	kernel/lib/list.c	/^list_back (struct list *list)$/;"	f
+list_begin	kernel/lib/list.c	/^list_begin (struct list *list)$/;"	f
+list_elem	kernel/include/list.h	/^struct list_elem $/;"	s
+list_empty	kernel/lib/list.c	/^list_empty (struct list *list)$/;"	f
+list_end	kernel/lib/list.c	/^list_end (struct list *list)$/;"	f
+list_entry	kernel/include/list.h	107;"	d
+list_front	kernel/lib/list.c	/^list_front (struct list *list)$/;"	f
+list_head	kernel/lib/list.c	/^list_head (struct list *list) $/;"	f
+list_init	kernel/lib/list.c	/^list_init (struct list *list)$/;"	f
+list_insert	kernel/lib/list.c	/^list_insert (struct list_elem *before, struct list_elem *elem)$/;"	f
+list_insert_ordered	kernel/lib/list.c	/^list_insert_ordered (struct list *list, struct list_elem *elem,$/;"	f
+list_less_func	kernel/include/list.h	/^typedef bool list_less_func (const struct list_elem *a,$/;"	t
+list_max	kernel/lib/list.c	/^list_max (struct list *list, list_less_func *less, void *aux)$/;"	f
+list_min	kernel/lib/list.c	/^list_min (struct list *list, list_less_func *less, void *aux)$/;"	f
+list_next	kernel/lib/list.c	/^list_next (struct list_elem *elem)$/;"	f
+list_pop_back	kernel/lib/list.c	/^list_pop_back (struct list *list)$/;"	f
+list_pop_front	kernel/lib/list.c	/^list_pop_front (struct list *list)$/;"	f
+list_prev	kernel/lib/list.c	/^list_prev (struct list_elem *elem)$/;"	f
+list_push_back	kernel/lib/list.c	/^list_push_back (struct list *list, struct list_elem *elem)$/;"	f
+list_push_front	kernel/lib/list.c	/^list_push_front (struct list *list, struct list_elem *elem)$/;"	f
+list_rbegin	kernel/lib/list.c	/^list_rbegin (struct list *list) $/;"	f
+list_remove	kernel/lib/list.c	/^list_remove (struct list_elem *elem)$/;"	f
+list_rend	kernel/lib/list.c	/^list_rend (struct list *list) $/;"	f
+list_reverse	kernel/lib/list.c	/^list_reverse (struct list *list)$/;"	f
+list_size	kernel/lib/list.c	/^list_size (struct list *list)$/;"	f
+list_sort	kernel/lib/list.c	/^list_sort (struct list *list, list_less_func *less, void *aux)$/;"	f
+list_splice	kernel/lib/list.c	/^list_splice (struct list_elem *before,$/;"	f
+list_tail	kernel/lib/list.c	/^list_tail (struct list *list) $/;"	f
+list_unique	kernel/lib/list.c	/^list_unique (struct list *list, struct list *duplicates,$/;"	f
+lock	kernel/arch/palloc.c	/^	struct lock lock;                   \/* Mutual exclusion. *\/$/;"	m	struct:pool	typeref:struct:pool::lock	file:
+lock	kernel/include/synch.h	/^struct lock $/;"	s
+lock_acquire	kernel/lib/synch.c	/^lock_acquire (struct lock *lock)$/;"	f
+lock_held_by_current_thread	kernel/lib/synch.c	/^lock_held_by_current_thread (const struct lock *lock) $/;"	f
+lock_init	kernel/lib/synch.c	/^lock_init (struct lock *lock)$/;"	f
+lock_pid_simple	kernel/arch/proc.c	/^static int lock_pid_simple; \/\/1 : lock, 0 : unlock$/;"	v	file:
+lock_release	kernel/lib/synch.c	/^lock_release (struct lock *lock) $/;"	f
+lock_try_acquire	kernel/lib/synch.c	/^lock_try_acquire (struct lock *lock)$/;"	f
+main_init	kernel/arch/Main.c	/^void main_init(void)$/;"	f
+mem_pool	kernel/arch/palloc.c	/^static struct pool mem_pool;$/;"	v	typeref:struct:pool	file:
+mem_size	kernel/arch/mm.c	/^unsigned long mem_size()$/;"	f
+memcpy	kernel/lib/ssulib.c	/^void memcpy(void* from, void* to, uint32_t len)$/;"	f
+memcpy_hard	kernel/arch/paging.c	/^void memcpy_hard(void* from, void* to, uint32_t len)$/;"	f
+memset	kernel/arch/mm.c	/^memset(void* dst_, int value, unsigned int size)$/;"	f
+more_prio	kernel/arch/proc.c	/^bool more_prio(const struct list_elem *a, const struct list_elem *b,void *aux)$/;"	f
+msgPMode	boot/i386/boot1.asm	/^msgPMode db "Protected Mode", 0$/;"	d
+msgRMode	boot/i386/boot1.asm	/^msgRMode db "Real Mode", 0$/;"	d
+nGetMemSize	kernel/arch/mm.c	/^unsigned long nGetMemSize()$/;"	f
+next	kernel/include/list.h	/^    struct list_elem *next;     \/* Next list element. *\/$/;"	m	struct:list_elem	typeref:struct:list_elem::list_elem
+next_line	kernel/arch/console.c	/^char next_line[2]; \/\/"\\r\\n";$/;"	v
+number	kernel/lib/vsprintk.c	/^static char *number(char * str, int num, int base, int size, int precision, int type)$/;"	f	file:
+offsetof	kernel/include/ssulib.h	5;"	d
+org	boot/i386/boot1.asm	/^org	0x9000$/;"	l
+org	boot/i386/bootloader.asm	/^org	0x7c00   $/;"	l
+outb	kernel/arch/io.asm	/^outb:  $/;"	l
+outl	kernel/arch/io.asm	/^outl:$/;"	l
+p_list	kernel/arch/proc.c	/^struct list p_list;		\/\/ All Porcess List$/;"	v	typeref:struct:list
+p_state	kernel/include/proc.h	/^enum p_state {$/;"	g
+palloc_free_multiple	kernel/arch/palloc.c	/^palloc_free_multiple (void *pages, size_t page_cnt) $/;"	f
+palloc_free_page	kernel/arch/palloc.c	/^palloc_free_page (void *page) $/;"	f
+palloc_get_multiple	kernel/arch/palloc.c	/^palloc_get_multiple (size_t page_cnt)$/;"	f
+palloc_get_page	kernel/arch/palloc.c	/^palloc_get_page (void) $/;"	f
+parent	kernel/include/proc.h	/^	struct process* parent;				\/\/ 부모 프로세스$/;"	m	struct:process	typeref:struct:process::process
+pd	kernel/include/proc.h	/^	void *pd;						\/\/page directory$/;"	m	struct:process
+pd_copy	kernel/arch/paging.c	/^void pd_copy(uint32_t* from, uint32_t* to, uint32_t* start, uint32_t* end, bool share)$/;"	f
+pd_create	kernel/arch/paging.c	/^uint32_t* pd_create (pid_t pid)$/;"	f
+pde_idx_addr	kernel/arch/paging.c	/^uint32_t pde_idx_addr(uint32_t* addr)$/;"	f
+pf_handler	kernel/arch/paging.c	/^intr_handler_func pf_handler;$/;"	v
+pf_handler	kernel/arch/paging.c	/^void pf_handler(struct intr_frame *iframe)$/;"	f
+pg_addr	kernel/arch/paging.c	/^uint32_t* pg_addr(uint32_t* addr)$/;"	f
+pg_no	kernel/include/paging.h	/^static inline uint32_t pg_no(const uint32_t *page){$/;"	f
+pid	kernel/include/proc.h	/^	pid_t pid;						\/\/process id$/;"	m	struct:process
+pid_num_max	kernel/arch/proc.c	/^int pid_num_max;$/;"	v
+pid_t	kernel/include/proc.h	/^typedef int pid_t;$/;"	t
+pool	kernel/arch/palloc.c	/^struct pool$/;"	s	file:
+pop	boot/i386/boot1.asm	/^		pop		ds$/;"	d
+prev	kernel/include/list.h	/^    struct list_elem *prev;     \/* Previous list element. *\/$/;"	m	struct:list_elem	typeref:struct:list_elem::list_elem
+printCharToSerial	kernel/arch/console.c	/^void printCharToSerial(const char *pString)$/;"	f
+print_contributors	kernel/arch/Main.c	/^void print_contributors(void)$/;"	f
+print_pid	kernel/arch/proc.c	/^void print_pid(void* aux) {$/;"	f
+print_pid	kernel/include/proc.h	/^proc_func print_pid;				\/\/디버그용, pid 출력$/;"	v
+printk	kernel/arch/console.c	/^int printk(const char *fmt, ...)$/;"	f
+priority	kernel/include/proc.h	/^	unsigned char priority;			\/\/프로세스의 스케쥴링 우선순위 0~256$/;"	m	struct:process
+priority	kernel/include/proc.h	/^	unsigned priority;$/;"	m	struct:proc_option
+proc_block	kernel/arch/proc.c	/^void proc_block(void)$/;"	f
+proc_create	kernel/arch/proc.c	/^pid_t proc_create(proc_func func, struct proc_option *opt, void* aux)$/;"	f
+proc_end	kernel/arch/proc.c	/^void proc_end(void)$/;"	f
+proc_free	kernel/arch/proc.c	/^void proc_free(void)$/;"	f
+proc_func	kernel/include/proc.h	/^typedef void proc_func(void* aux);	\/\/process 동작 함수 원형$/;"	t
+proc_option	kernel/include/proc.h	/^struct proc_option$/;"	s
+proc_print_data	kernel/arch/proc.c	/^void proc_print_data()$/;"	f
+proc_sleep	kernel/arch/proc.c	/^void proc_sleep(unsigned ticks)$/;"	f
+proc_start	kernel/arch/proc.c	/^void  proc_start(void)$/;"	f
+proc_unblock	kernel/arch/proc.c	/^void proc_unblock(struct process* proc)$/;"	f
+proc_wake	kernel/arch/proc.c	/^void proc_wake(void)$/;"	f
+process	kernel/include/proc.h	/^struct process$/;"	s
+process_stack_ofs	kernel/arch/proc.c	/^uint32_t process_stack_ofs;$/;"	v
+procs	kernel/arch/proc.c	/^struct process procs[PROC_NUM_MAX];$/;"	v	typeref:struct:process
+ps_proc	kernel/arch/proc.c	/^void ps_proc(void* aux)$/;"	f
+pt_addr	kernel/arch/paging.c	/^uint32_t* pt_addr(uint32_t* addr)$/;"	f
+pt_copy	kernel/arch/paging.c	/^uint32_t pt_copy(uint32_t *pd, uint32_t *dest_pd, uint32_t idx, uint32_t* start, uint32_t* end, bool share)$/;"	f
+pt_pde	kernel/arch/paging.c	/^uint32_t* pt_pde(uint32_t pde)$/;"	f
+pte_idx_addr	kernel/arch/paging.c	/^uint32_t pte_idx_addr(uint32_t* addr)$/;"	f
+push	boot/i386/boot1.asm	/^		push	ds$/;"	d
+qword	kernel/include/type.h	/^typedef long long qword;$/;"	t
+r_list	kernel/arch/proc.c	/^struct list r_list;		\/\/ Run Porcess List$/;"	v	typeref:struct:list
+read_cr0	kernel/arch/crset.asm	/^read_cr0:$/;"	l
+read_cr3	kernel/arch/crset.asm	/^read_cr3:$/;"	l
+refreshScreen	kernel/arch/console.c	/^void refreshScreen(void)$/;"	f
+reg_handler	kernel/arch/interrupt.c	/^void reg_handler(unsigned short idx, intr_handler_func *handler) $/;"	f
+s_list	kernel/arch/proc.c	/^struct list s_list;		\/\/ Sleep Process List$/;"	v	typeref:struct:list
+scale_down	kernel/arch/paging.c	/^uint32_t scale_down(uint32_t base, uint32_t size)$/;"	f
+scale_up	kernel/arch/paging.c	/^uint32_t scale_up(uint32_t base, uint32_t size)$/;"	f
+sched_on_return	kernel/arch/interrupt.c	/^bool sched_on_return;		\/\/인터럽트가 끝날 때 schedule 할 지 결정$/;"	v
+schedule	kernel/arch/sched.c	/^void schedule(void)$/;"	f
+scr_end	kernel/arch/console.c	/^char* scr_end;\/\/ = buf_s + SIZE_SCROLL;$/;"	v
+scroll	kernel/arch/console.c	/^void scroll(void) $/;"	f
+scroll_screen	kernel/arch/console.c	/^void scroll_screen(int offset)$/;"	f
+sema_down	kernel/lib/synch.c	/^sema_down (struct semaphore *sema) $/;"	f
+sema_init	kernel/lib/synch.c	/^sema_init(struct semaphore *sema, unsigned value)$/;"	f
+sema_self_test	kernel/lib/synch.c	/^sema_self_test (void) $/;"	f
+sema_test_helper	kernel/lib/synch.c	/^sema_test_helper (void *sema_) $/;"	f	file:
+sema_try_down	kernel/lib/synch.c	/^sema_try_down (struct semaphore *sema) $/;"	f
+sema_up	kernel/lib/synch.c	/^sema_up (struct semaphore *sema) $/;"	f
+semaphore	kernel/include/synch.h	/^      struct semaphore semaphore; \/* Binary semaphore controlling access. *\/$/;"	m	struct:lock	typeref:struct:lock::semaphore
+semaphore	kernel/include/synch.h	/^struct semaphore $/;"	s
+set_fallow	kernel/arch/console.c	/^void set_fallow(void)$/;"	f
+shutdown	kernel/arch/syscall.c	/^void shutdown(void)$/;"	f
+simple_lock	kernel/include/proc.h	/^	int simple_lock;					\/\/ 부모 락$/;"	m	struct:process
+size_t	kernel/include/type.h	/^typedef unsigned size_t;$/;"	t
+skip_atoi	kernel/lib/vsprintk.c	/^static int skip_atoi(const char **s)$/;"	f	file:
+ss	kernel/include/interrupt.h	/^	uint16_t ss, :16;           \/* Data segment for esp. *\/$/;"	m	struct:intr_frame
+ssuos_main	kernel/arch/Main.c	/^void ssuos_main(void)$/;"	f
+ssuread	kernel/arch/syscall.c	/^int ssuread()$/;"	f
+stack	kernel/include/proc.h	/^	void *stack;					\/\/stack for esp$/;"	m	struct:process
+state	kernel/include/proc.h	/^	enum p_state state;				\/\/ process state$/;"	m	struct:process	typeref:enum:process::p_state
+strlen	kernel/lib/vsprintk.c	/^int strlen(const char *string)$/;"	f
+strncmp	kernel/lib/ssulib.c	/^int strncmp(char* b1, char* b2, int len)$/;"	f
+swap	kernel/lib/list.c	/^swap (struct list_elem **a, struct list_elem **b) $/;"	f	file:
+switch_process	kernel/arch/switch.s	/^switch_process:$/;"	l
+syscall0	kernel/arch/syscall.c	11;"	d	file:
+syscall1	kernel/arch/syscall.c	23;"	d	file:
+syscall2	kernel/arch/syscall.c	37;"	d	file:
+syscall3	kernel/arch/syscall.c	53;"	d	file:
+syscall_handler	kernel/arch/interrupt.c	/^void syscall_handler(struct intr_frame *iframe)$/;"	f
+syscall_tbl	kernel/arch/syscall.c	/^int syscall_tbl[SYS_NUM][2];$/;"	v
+tail	kernel/include/list.h	/^    struct list_elem tail;      \/* List tail. *\/$/;"	m	struct:list	typeref:struct:list::list_elem
+ticks	kernel/arch/interrupt.c	/^static unsigned long ticks;$/;"	v	file:
+time_sched	kernel/include/proc.h	/^	unsigned long long time_sched;		\/\/ 스케줄 횟수$/;"	m	struct:process
+time_sleep	kernel/include/proc.h	/^	unsigned long long time_sleep;	\/\/프로세스를 재울 시간$/;"	m	struct:process
+time_slice	kernel/include/proc.h	/^	unsigned time_slice;			\/\/프로세스의 수행 tick. 스케줄 시 초기화$/;"	m	struct:process
+time_used	kernel/include/proc.h	/^	unsigned long long time_used;		\/\/ 총 실행 시간$/;"	m	struct:process
+timer_handler	kernel/arch/interrupt.c	/^void timer_handler(struct intr_frame *iframe)$/;"	f
+times	boot/i386/boot1.asm	/^times 	2048-($-$$) db 0x00$/;"	l
+times	boot/i386/bootloader.asm	/^times 	510-($-$$) db 0x00$/;"	l
+true	kernel/include/type.h	19;"	d
+type	kernel/arch/proc.c	/^	unsigned char type;	\/\/0 : 직접실행, 1 : fork 함수실행$/;"	m	struct:__anon1	file:
+uint16_t	kernel/include/type.h	/^typedef unsigned short int uint16_t;$/;"	t
+uint32_t	kernel/include/type.h	/^typedef unsigned int uint32_t;$/;"	t
+uint64_t	kernel/include/type.h	/^typedef unsigned long long int uint64_t;$/;"	t
+uint8_t	kernel/include/type.h	/^typedef unsigned char uint8_t;$/;"	t
+uintmax_t	kernel/include/type.h	/^typedef uint64_t uintmax_t;$/;"	t
+uintptr_t	kernel/include/type.h	/^typedef uint32_t uintptr_t;$/;"	t
+uname_proc	kernel/arch/proc.c	/^void uname_proc(void* aux)$/;"	f
+used_map	kernel/arch/palloc.c	/^	struct bitmap *used_map;            \/* Bitmap of free pages. *\/$/;"	m	struct:pool	typeref:struct:pool::bitmap	file:
+va_arg	kernel/include/stdarg.h	10;"	d
+va_end	kernel/include/stdarg.h	11;"	d
+va_list	kernel/include/stdarg.h	/^typedef char			*va_list;$/;"	t
+va_start	kernel/include/stdarg.h	9;"	d
+value	kernel/include/synch.h	/^      unsigned value;             \/* Current value. *\/$/;"	m	struct:semaphore
+vec_no	kernel/include/interrupt.h	/^	uint32_t vec_no;            \/* Interrupt vector number. *\/$/;"	m	struct:intr_frame
+vsprintk	kernel/lib/vsprintk.c	/^int vsprintk(char *buf, const char *fmt, va_list args)$/;"	f
+wait	kernel/arch/syscall.c	/^pid_t wait(int *status)$/;"	f
+waiters	kernel/include/synch.h	/^      struct list waiters;        \/* List of waiting threads. *\/$/;"	m	struct:condition	typeref:struct:condition::list
+waiters	kernel/include/synch.h	/^      struct list waiters;        \/* List of waiting threads. *\/$/;"	m	struct:semaphore	typeref:struct:semaphore::list
+write_cr0	kernel/arch/crset.asm	/^write_cr0:$/;"	l
+write_cr3	kernel/arch/crset.asm	/^write_cr3:$/;"	l
+zero	kernel/arch/intr-stubs.S	/^#define zero                                \\$/;"	d

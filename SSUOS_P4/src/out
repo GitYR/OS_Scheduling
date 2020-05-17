@@ -1,0 +1,98 @@
+In file included from lib/ssulib.c:2:0:
+./include/syscall.h: In function ‘strncmp’:
+./include/syscall.h:4:1: warning: empty declaration
+ enum {
+ ^
+In file included from ./include/proc.h:4:0,
+                 from ./include/syscall.h:13,
+                 from lib/ssulib.c:2:
+./include/list.h:89:1: warning: empty declaration
+ struct list_elem 
+ ^
+./include/list.h:96:1: warning: empty declaration
+ struct list 
+ ^
+./include/list.h:164:14: error: storage class specified for parameter ‘list_less_func’
+ typedef bool list_less_func (const struct list_elem *a,
+              ^
+./include/list.h:170:17: error: expected declaration specifiers or ‘...’ before ‘list_less_func’
+                 list_less_func *, void *aux);
+                 ^
+./include/list.h:172:27: error: expected declaration specifiers or ‘...’ before ‘list_less_func’
+                           list_less_func *, void *aux);
+                           ^
+./include/list.h:174:19: error: expected declaration specifiers or ‘...’ before ‘list_less_func’
+                   list_less_func *, void *aux);
+                   ^
+./include/list.h:177:44: error: expected declaration specifiers or ‘...’ before ‘list_less_func’
+ struct list_elem *list_max (struct list *, list_less_func *, void *aux);
+                                            ^
+./include/list.h:178:44: error: expected declaration specifiers or ‘...’ before ‘list_less_func’
+ struct list_elem *list_min (struct list *, list_less_func *, void *aux);
+                                            ^
+In file included from ./include/syscall.h:13:0,
+                 from lib/ssulib.c:2:
+./include/proc.h:6:13: error: storage class specified for parameter ‘pid_t’
+ typedef int pid_t;
+             ^
+./include/proc.h:8:1: warning: empty declaration
+ enum p_state {
+ ^
+./include/proc.h:16:9: error: expected declaration specifiers before ‘#pragma’
+ #pragma pack(push, 1)
+         ^
+./include/proc.h:21:2: error: expected declaration specifiers before ‘;’ token
+ };
+  ^
+./include/proc.h:25:2: error: expected specifier-qualifier-list before ‘pid_t’
+  pid_t pid;      //process id
+  ^
+./include/proc.h:23:1: warning: empty declaration
+ struct process
+ ^
+./include/proc.h:45:9: error: expected declaration specifiers before ‘#pragma’
+ #pragma pack(pop)
+         ^
+./include/proc.h:49:14: error: storage class specified for parameter ‘proc_func’
+ typedef void proc_func(void* aux); //process 동작 함수 원형
+              ^
+./include/proc.h:50:1: error: expected declaration specifiers before ‘proc_func’
+ proc_func print_pid;    //디버그용, pid 출력
+ ^
+./include/proc.h:51:1: error: expected declaration specifiers before ‘proc_func’
+ proc_func idle;      //idle 함수
+ ^
+./include/proc.h:58:1: error: expected declaration specifiers before ‘pid_t’
+ pid_t proc_create(proc_func func, struct proc_option *priority, void* aux); //프로세스 생성
+ ^
+In file included from lib/ssulib.c:2:0:
+./include/syscall.h:17:1: error: expected declaration specifiers before ‘pid_t’
+ pid_t fork(proc_func func, void* aux);
+ ^
+./include/syscall.h:18:1: error: expected declaration specifiers before ‘pid_t’
+ pid_t wait(int *status);
+ ^
+./include/syscall.h:22:12: error: storage class specified for parameter ‘syscall_tbl’
+ extern int syscall_tbl[SYS_NUM][2];
+            ^
+lib/ssulib.c:5:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+lib/ssulib.c:26:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+lib/ssulib.c:39:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+lib/ssulib.c:44:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+ {
+ ^
+In file included from lib/ssulib.c:1:0:
+./include/ssulib.h:10:5: error: old-style parameter declarations in prototyped function definition
+ int strncmp(char* b1, char* b2, int len)
+     ^
+lib/ssulib.c:77:1: error: expected ‘{’ at end of input
+ }
+ ^
+make[1]: *** [ssulib.o] Error 1
+make: *** [kernel] Error 2

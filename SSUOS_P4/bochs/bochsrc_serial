@@ -1,0 +1,12 @@
+cpu: count=1, ips=20000000, reset_on_triple_fault=1, ignore_bad_msrs=1, msrs="msrs.def"
+display_library: x
+megs: 128
+romimage: file=$BXSHARE/BIOS-bochs-latest
+vgaromimage: file=$BXSHARE/VGABIOS-lgpl-latest
+vga: extension=vbe
+ata0-master: type=disk, path=disk.img, cylinders=20, heads=16, spt=63
+boot: disk
+log: bochsout.txt
+mouse: enabled=0
+clock: sync=realtime, time0=utc
+com1:enabled=1, mode=term, dev=/dev/stdout
